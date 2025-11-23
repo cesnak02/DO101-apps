@@ -7,6 +7,7 @@ app.get('/', function (req, res) {
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, function () {
-  console.log(`Example app listening on port ${port}!`);
+app.listen(port, "0.0.0.0", function () {
+  console.log(`App listening on port ${port}`);
 });
+
